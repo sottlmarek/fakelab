@@ -1,8 +1,8 @@
 
-provider "aws" {
-  region     = "eu-west-1"
-  access_key = "AKIALALEMELFE243OLIAE-THISISFAKEKEY"
-  secret_key = "AKIALALEMELF2243OLIAE-THISISFAKEKEY2"
+provider "google" {
+  credentials = file("account.json")
+  project     = "34324324321535FAKEID"
+  region      = "us-central1"
 }
 
 resource "aws_s3_bucket" "bucket" {
