@@ -38,9 +38,6 @@ jobs:
         run: |
           ls -l
           cat codeguru-security-results.sarif.json
-
-      # If you want content in security scanning, you’ll need to enable codescanning by going into github.
-      # https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning-for-a-repository
       - name: Upload result
         uses: github/codeql-action/upload-sarif@v2
         with:
