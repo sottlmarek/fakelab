@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "bucket" {
-  bucket = "hackitecttestbucket"
+  bucket = "hackitecttestbuckets"
   acl    = "private"
 
   tags = {
